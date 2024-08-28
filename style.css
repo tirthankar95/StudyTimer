@@ -1,0 +1,57 @@
+body{
+    overflow: auto;
+}
+.main-layout{
+    background-color: rgb(6, 43, 63);
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.timer-button{
+    background-color: #4ca2af; /* Default background color */
+    color: white;              /* Default text color */
+    padding: 15px 30px;        /* Padding inside the button */
+    border: none;              /* Remove default border */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 16px;           /* Font size */
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.timer-button:hover {
+    background-color: #4568a0; /* Darker green on hover */
+    transform: scale(1.05);    /* Slightly increase the size on hover */
+}
+
+.timer-button.active {
+    background-color: #4568a0; /* Darker green on hover */
+    transform: scale(1.05);    /* Slightly increase the size on hover */
+}
+
+#timer-text{
+    font-size: 40px;
+}
+
+
+/* History Style*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+}
+table, th, td {
+    border: 1px solid rgb(157, 249, 247);
+}
+th, td {
+    padding: 25px;
+    text-align: center;
+}
